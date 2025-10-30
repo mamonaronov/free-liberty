@@ -1,0 +1,106 @@
+/* Основные стили для header */
+header {
+  background-color: #f0d8fa; 
+  color: #333; 
+  padding: 20px; /* Внутренние отступы */
+  display: flex; /* Флексбокс для выравнивания элементов */
+  align-items: center; /* Выравнивание по вертикали */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* это для тени*/
+  border-radius: 10px;  /* это для скругления*/
+  position: relative;
+  z-index: 2; 
+}
+
+#SiteName {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для логотипа */
+header img#header_Logo {
+  height: 50px; /* Высота логотипа */
+  margin-right: 20px; /* Отступ справа от логотипа */
+}
+
+/* Стили для заголовка */
+header h1 {
+  margin: 0; /* Убираем стандартные отступы */
+  font-size: 24px; /* Размер шрифта */
+  /* margin-right: auto;*/ /* Отступ справа для выравнивания меню по правому краю */
+}
+
+/* Стили для меню */
+#menu ul {
+	  display: flex; /* Флексбокс для выравнивания элементов */
+  margin-left: auto;
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем стандартные отступы */
+  margin: 0; /* Убираем стандартные отступы */
+  display: flex; /* Флексбокс для выравнивания элементов */
+}
+
+/* Стили для элементов меню */
+#menu ul li {
+	
+  margin-left: 10px; /* Отступы между элементами меню */
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для ссылок в меню */
+#menu ul li a {
+  color: #333; /* Белый текст НЕТ */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 16px; /* Размер шрифта */
+  /*height: 50px;  Установите высоту, соответствующую высоте других элементов */
+  /* height: 50px; Установите высоту, соответствующую высоте других элементов */
+  padding: 0 10px; /* Внутренние отступы */
+
+}
+
+/* Стили для ссылок в меню при наведении */
+#menu ul li a:hover {
+  color: #b623f2; /* Цвет при наведении */
+}
+
+    #header_sitename {
+      color: #7918a0; /* Цвет текста */
+      text-decoration: none; /* Убираем подчеркивание */
+    }
+    #header_sitename h1 {
+      color: inherit; /* Наследуем цвет от родительского элемента */
+      text-decoration: inherit; /* Наследуем оформление текста от родительского элемента */
+      margin: 0; /* Убираем отступы по умолчанию у заголовка */
+    }
+	
+	
+.push {
+  margin-left: auto;
+  /*margin-right: 10px;  Отступ справа */
+}
+
+
+
+
+/* это для картинки и кнопки выйти */
+.element { 
+  display: flex;
+  align-items: center;
+  height: 50px; /* Высота */
+  border-radius: 25px;
+  background-color: #b699c3; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0 5px; /* Внутренние отступы */
+  
+}
+
+
+
+#header_AccImg {
+height: 40px; /* Высота */
+border-radius: 50%;
+/*margin-right: 10px;  Отступ справа */
+}
+
+

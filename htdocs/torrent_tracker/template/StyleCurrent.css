@@ -1,0 +1,188 @@
+.wrap {width: 1000px; margin: 0 auto;} /*Отступ сверху и снизу - 0, слева и справа автоматически, т.е. по центру*/
+
+
+
+/* это стиль именно для страницы торрента */
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+     background-color: #f4f4f4; 
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5e9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для контейнера */
+.container {
+    padding: 20px;
+    background-color: #f5e9fa;
+    /* border-radius: 8px; */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Стили для заголовка */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для изображения */
+img#TorrentImg {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Стили для параграфов */
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылки на скачивание */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для сильных тегов */
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*.container {
+	 text-align: left; Устанавливает выравнивание текста внутри контейнера 
+}*/
+
+#header_AccImg {
+	vertical-align: middle; /* Выравнивает изображение по вертикали с текстом */
+	 /*margin-left: 10px; Добавляет отступ слева от изображения */
+
+}
+p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+a {
+	color: #007BFF;
+	text-decoration: none;
+}  */
+	a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Основной контейнер для списка торрентов */
+
+.articles-film-cuted {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Каждый элемент торрента */
+.article-film {
+    width: 23%; /* Уменьшенная ширина для учета отступов */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Изображение торрента */
+.article-film-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.article-film-image a:not([onclick]) {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 140%; /* Соотношение сторон изображения */
+    position: relative;
+}
+
+.article-film-image a:not([onclick]) img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Сохраняет пропорции изображения */
+    border-radius: 8px;
+}
+
+/* Заголовок торрента */
+.article-film-title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.article-film-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Адаптация для меньших экранов */
+@media (max-width: 768px) {
+    .article-film {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-film {
+        width: 100%;
+    }
+}
